@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Мой Блог{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<nav>
+    <a href="{{ url_for('main_blog') }}">Главная</a>
+    <a href="{{ url_for('create_post') }}">Добавить пост</a>
+    <a href="{{ url_for('about') }}">О нас</a>
+    {#<a href="https://google.com">google</a>#}
+</nav>
+
+
+<div>
+    {% block body %}
+    {% endblock %}
+</div>
+
+<footer>
+    <p class="text-center text-body-secondary">© 2026 Мой блог</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{%extends "base.html"%}
+
+{% block body %}
+<div class="form-group">
+
+    <article class="post">
+        <h2>Пост: {{ post.title }}</h2>
+        <p>Автор:{{post.author}}</p>
+        <p class="date">Опубликовано: {{post.date}}</p>
+        <p>{{ post.content}}...</p>
+    </article>
+
+
+</div>
+
+{% endblock %}
